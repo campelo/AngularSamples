@@ -1,0 +1,12 @@
+<app-sample-label [label]="label"></app-sample-label>
+<div *ngFor="let i of items">
+  <input
+    type="radio"
+    [value]="i"
+    [disabled]="disabled"
+    [name]="groupName"
+    (input)="onChangeValue($event)"
+    #sampleRadio
+  />
+  <app-sample-label [label]="i"></app-sample-label>
+</div>
