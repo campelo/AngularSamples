@@ -1,0 +1,33 @@
+<div class="header-date-selector">
+  <button
+    mat-icon-button
+    class="example-double-arrow"
+    (click)="previousClicked('year')"
+    color="primary"
+  >
+    &lt;&lt;
+  </button>
+  <button
+    mat-icon-button
+    (click)="previousClicked('month')"
+    color="accent"
+  >
+    &lt;
+  </button>
+  <span class="header-date-selector-title">{{ periodLabel }}</span>
+  <button
+    mat-icon-button
+    (click)="nextClicked('month')"
+    color="accent"
+  >
+    &gt;
+  </button>
+  <button
+    mat-icon-button
+    class="example-double-arrow"
+    (click)="nextClicked('year')"
+    color="primary"
+  >
+    &gt;&gt;
+  </button>
+</div>

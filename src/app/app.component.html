@@ -1,10 +1,12 @@
 <form [formGroup]="mainForm">
+  
   <div class="col-md-4">
     <app-sample-input
       formControlName="name"
       label="Name:"
     ></app-sample-input>
   </div>
+  
   <div class="col-md-4">
     <app-sample-radio-group
       formControlName="city"
@@ -12,6 +14,15 @@
       [items]="cities"
       groupName="radioGroup1"
     ></app-sample-radio-group>
+  </div>
+
+  <div class="col-md-4">
+    <app-sample-date
+      formControlName="dateSample"
+      label="Date sample:"
+      [min]="minDate"
+      [max]="maxDate"
+    ></app-sample-date>
   </div>
 
   <app-sample-button

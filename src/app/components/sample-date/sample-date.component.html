@@ -1,0 +1,27 @@
+<app-sample-label [label]="label"></app-sample-label>
+<div class="input-icon">
+  <input
+    matInput
+    type="date"
+    [disabled]="disabled"
+    [matDatepicker]="datePicker"
+    [min]="dateMin"
+    [max]="dateMax"
+    class="input-right"
+    [(ngModel)]="value"
+    (dateChange)="onChangeValue($event)"
+    #sampleDate
+  />
+  <mat-datepicker
+    #datePicker
+    color="primary"
+    [calendarHeaderComponent]="headerDateComponent"
+  ></mat-datepicker>
+  <button
+    class="button-calendar"
+    (click)="datePicker.open()"
+    [disabled]="disabled"
+  >
+    <img src="./assets/calendarIcon.png" width="28" height="28"/>
+  </button>
+</div>

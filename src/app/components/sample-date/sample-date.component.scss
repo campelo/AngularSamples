@@ -1,0 +1,29 @@
+.input-icon {
+  display: inline-flex;
+}
+
+.input-right {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.button-calendar {
+  margin-left: -1px;
+  width: 40px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  text-align: center;
+  border: 1px solid #717171;
+  margin-top: -0.8px;
+  padding: 0px !important;
+  position: inherit;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
